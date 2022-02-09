@@ -3,7 +3,7 @@ import YouTube from 'react-youtube';
 
 import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img, ImagesGrid } from './ManuStyles';
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
-import { projects } from '../../constants/constants';
+import { manu } from '../../constants/constants';
 
 const opts = {
   height: '400',
@@ -19,12 +19,12 @@ const Manu = () => (
   <Section nopadding id="Zeca">
     <SectionDivider />
     <GridContainer>
-      {projects.map((p, i) => {
+      {manu.map((p, i) => {
         return (
           <BlogCard key={i}>
               <TitleContent>
               <Hr />
-              <HeaderThree title>Manu</HeaderThree>
+              <HeaderThree title>{p.title}</HeaderThree>
               <Hr />
             </TitleContent>
             <CardInfo className="card-info">{p.description}</CardInfo>

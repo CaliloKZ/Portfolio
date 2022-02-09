@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Img = styled.img`
   width:100%;
+  max-width: 50vw;
   height:100%;
   object-fit: contain;
   overflow: hidden;
@@ -38,10 +39,12 @@ row-gap: 3rem;
 
 `
 export const BlogCard = styled.div`
+  position: center;
   border-radius: 50px;
   box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
   text-align: center;
   width: 1000px;
+  min-width: 80vw;
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 20%;
   }
@@ -82,12 +85,13 @@ export const Intro = styled.div`
 
 
 export const CardInfo = styled.p`
-  width: 100%;
+  width: 70vw;
   padding: 0 50px;
   color: #e4e6e7;
   font-style: 2rem;
-  line-height: 24px;
+  line-height: 15px;
   text-align: justify;
+  margin: 6.5%;
   @media ${(props) => props.theme.breakpoints.sm} {
     padding:.3rem
   

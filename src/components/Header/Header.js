@@ -8,7 +8,7 @@ import { Container, Div1, Div2, Div3, NavLink, SocialIcons } from './HeaderStyle
 const Header = () =>  (
   <Container>
     <Div1>
-      <Link href="/">
+      <Link href="https://calilokizan.vercel.app/">
         <a style={{ display: 'flex', alignItems: 'center', color:"white" }}>
           <DiCssdeck size="3rem" /> <span>Portfolio</span>
         </a>

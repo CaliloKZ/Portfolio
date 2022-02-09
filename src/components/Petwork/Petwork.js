@@ -3,7 +3,7 @@ import YouTube from 'react-youtube';
 
 import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img, ImagesGrid } from './PetworkStyles';
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
-import { projects } from '../../constants/constants';
+import { petwork, projects } from '../../constants/constants';
 
 const opts = {
   height: '400',
@@ -19,12 +19,12 @@ const Petwork = () => (
   <Section nopadding id="Zeca">
     <SectionDivider />
     <GridContainer>
-      {projects.map((p, i) => {
+      {petwork.map((p, i) => {
         return (
           <BlogCard key={i}>
               <TitleContent>
               <Hr />
-              <HeaderThree title>Petwork</HeaderThree>
+              <HeaderThree title>{p.title}</HeaderThree>
               <Hr />
             </TitleContent>
             <CardInfo className="card-info">{p.description}</CardInfo>

@@ -1,4 +1,17 @@
-export const projects = [
+export const zeca = [
+  {
+    title: 'As aventuras da turma do Zeca',
+    description: "A game for Windows and Mobile Devices developed in the Unity Engine. I made a complete login system and database connection via API",
+      image_0: '/images/Logo horizontal.png',
+      image_1: '/images/Logo horizontal.png',
+      image_2: '/images/Logo horizontal.png',
+      image_3: '/images/Logo horizontal.png',
+    id: 0,
+  },
+
+];
+
+export const educational = [
   {
     title: 'Educational Games',
     description: "A collection of HTML5 games developed in the Unity engine for an educational project.",
@@ -6,10 +19,33 @@ export const projects = [
       image_1: '/images/Logo horizontal.png',
       image_2: '/images/Logo horizontal.png',
       image_3: '/images/Logo horizontal.png',
-      tags: ['Unity', 'HTML5', 'Educational', 'SQLServer', 'ASP.NET'],
-    visit: 'https://eduqbrinq.com.br/',
     id: 0,
-    nopaddingid: 'Educational',
+  },
+
+];
+
+export const petwork = [
+  {
+    title: 'Petwork',
+    description: "A collection of HTML5 games developed in the Unity engine for an educational project.",
+      image_0: '/images/Logo horizontal.png',
+      image_1: '/images/Logo horizontal.png',
+      image_2: '/images/Logo horizontal.png',
+      image_3: '/images/Logo horizontal.png',
+    id: 0,
+  },
+
+];
+
+export const manu = [
+  {
+    title: 'Manu',
+    description: "A collection of HTML5 games developed in the Unity engine for an educational project.",
+      image_0: '/images/Logo horizontal.png',
+      image_1: '/images/Logo horizontal.png',
+      image_2: '/images/Logo horizontal.png',
+      image_3: '/images/Logo horizontal.png',
+    id: 0,
   },
 
 ];

@@ -3,7 +3,7 @@ import YouTube from 'react-youtube';
 
 import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img, ImagesGrid } from './ZecaStyles';
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
-import { projects } from '../../constants/constants';
+import { projects, zeca } from '../../constants/constants';
 
 const opts = {
   height: '400',
@@ -19,12 +19,12 @@ const Zeca = () => (
   <Section nopadding id="Zeca">
     <SectionDivider />
     <GridContainer>
-      {projects.map((p, i) => {
+      {zeca.map((p, i) => {
         return (
           <BlogCard key={i}>
               <TitleContent>
               <Hr />
-              <HeaderThree title>As aventuras da turma do Zeca</HeaderThree>
+              <HeaderThree title>{p.title}</HeaderThree>
               <Hr />
             </TitleContent>
             <CardInfo className="card-info">{p.description}</CardInfo>
