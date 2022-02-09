@@ -5,6 +5,15 @@ import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag,
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
 import { projects } from '../../constants/constants';
 
+const opts = {
+  height: '400',
+  width: '400',
+  playerVars: {
+    // https://developers.google.com/youtube/player_parameters
+    autoplay: 0,
+  },
+};
+
 const Projects = () => (
   <Section nopadding id="projects">
     <SectionDivider />
@@ -13,8 +22,7 @@ const Projects = () => (
       {projects.map((p, i) => {
         return (
           <BlogCard key={i}>
-          <iframe id="ytplayer" type="text/html" width="400" height="400"
-                  src={p.video} frameborder="0"/>
+          <YouTube videoId={p.video} opts={opts}/>
             <TitleContent>
               <HeaderThree title>{p.title}</HeaderThree>
               <Hr />
