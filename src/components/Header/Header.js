@@ -14,22 +14,27 @@ const Header = () =>  (
         </a>
       </Link>
     </Div1>
-    <Div2>
+    <Div2> 
       <li>
-        <Link href="#projects">
-          <NavLink>Projects</NavLink>
+        <Link href="#Educational">
+          <NavLink>Educational</NavLink>
         </Link>
       </li>
       <li>
-        <Link href="#tech">
-          <NavLink>Technologies</NavLink>
+        <Link href="#Zeca">
+          <NavLink>Zeca</NavLink>
         </Link>
-      </li>        
+      </li>
       <li>
-        <Link href="#about">
-          <NavLink>About</NavLink>
+        <Link href="#Petwork">
+          <NavLink>Petwork</NavLink>
         </Link>
-      </li>        
+      </li>
+      <li>
+        <Link href="#Manu">
+          <NavLink>Manu</NavLink>
+        </Link>
+      </li>
     </Div2>
       <Div3>
         <SocialIcons href="https://github.com/CaliloKZ">

@@ -2,35 +2,16 @@ export const projects = [
   {
     title: 'Educational Games',
     description: "A collection of HTML5 games developed in the Unity engine for an educational project.",
-      video: 'KziabHgfecs',
+      image_0: '/images/Logo horizontal.png',
+      image_1: '/images/Logo horizontal.png',
+      image_2: '/images/Logo horizontal.png',
+      image_3: '/images/Logo horizontal.png',
       tags: ['Unity', 'HTML5', 'Educational', 'SQLServer', 'ASP.NET'],
     visit: 'https://eduqbrinq.com.br/',
     id: 0,
+    nopaddingid: 'Educational',
   },
-  {
-    title: 'As Aventuras da Turma do Zeca',
-    description: "A game for Windows and Android devices developed in the Unity engine for an educational project. Connection to SQL Server database via API.",
-      video: 'KziabHgfecs',
-      tags: ['Unity', 'Android', 'Windows', 'SQLServer', 'ASP.NET'],
-    visit: 'https://eduqbrinq.com.br/',
-    id: 0,
-  },
-  {
-    title: 'Petwork',
-    description:"This is a pet management game for Android devices made for a thesis.",
-    video: 'vXWogqGy_c0',
-    tags: ['Unity', 'Android', 'Management'],
-    visit: 'https://github.com/CaliloKZ/PetworkPublic',
-    id: 1,
-  },
-  {
-    title: 'Manu',
-    description:"Manu is a HTML5 game developed for the 2022 GlobalGameJam, this year's theme was 'Duality', due to that, this game shows this theme introducing to the player the prejudice against trans people, whose suffer frequently because they don't fit on binary genders ideals",
-    video: 'fb02DA0TvbA',
-      tags: ['Unity', 'HTML5', 'Puzzle', '2D'],
-    visit: 'https://calilokizan.itch.io/manu',
-    id: 2,
-  },
+
 ];
 
 export const TimeLineData = [
