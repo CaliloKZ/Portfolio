@@ -2,7 +2,7 @@ export const projects = [
   {
     title: 'As Aventuras da Turma do Zeca',
     description: "A game for Windows and Android devices developed in the Unity engine for an educational project.",
-      video: 'https://www.youtube.com/watch?v=KziabHgfecs',
+      video: 'https://www.youtube.com/watch?v=-V1spls2c3k',
       tags: ['Unity', 'Android', 'Windows',],
     visit: 'https://calilokzgames.vercel.app/#Zeca',
     id: 0,
