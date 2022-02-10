@@ -1,13 +1,5 @@
 export const projects = [
   {
-    title: 'Educational Games',
-    description: "A collection of HTML5 games developed in the Unity engine for an educational project.",
-      video: 'KziabHgfecs',
-      tags: ['Unity', 'HTML5', 'Educational', 'SQLServer', 'ASP.NET'],
-    visit: 'https://calilokzgames.vercel.app/#Educational',
-    id: 0,
-  },
-  {
     title: 'As Aventuras da Turma do Zeca',
     description: "A game for Windows and Android devices developed in the Unity engine for an educational project.",
       video: 'KziabHgfecs',
@@ -30,6 +22,14 @@ export const projects = [
       tags: ['Unity', 'HTML5', 'Puzzle', '2D'],
     visit: 'https://calilokzgames.vercel.app/#Manu',
     id: 2,
+  },
+  {
+    title: 'Educational Games',
+    description: "A collection of HTML5 games developed in the Unity engine for an educational project.",
+      video: 'KziabHgfecs',
+      tags: ['Unity', 'HTML5', 'Educational', 'SQLServer', 'ASP.NET'],
+    visit: 'https://calilokzgames.vercel.app/#Educational',
+    id: 3,
   },
 ];
 
