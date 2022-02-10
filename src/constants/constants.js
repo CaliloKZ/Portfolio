@@ -4,15 +4,15 @@ export const projects = [
     description: "A collection of HTML5 games developed in the Unity engine for an educational project.",
       video: 'KziabHgfecs',
       tags: ['Unity', 'HTML5', 'Educational', 'SQLServer', 'ASP.NET'],
-    visit: 'https://eduqbrinq.com.br/',
+    visit: 'https://calilokzgames.vercel.app/#Educational',
     id: 0,
   },
   {
     title: 'As Aventuras da Turma do Zeca',
-    description: "A game for Windows and Android devices developed in the Unity engine for an educational project. Connection to SQL Server database via API.",
+    description: "A game for Windows and Android devices developed in the Unity engine for an educational project.",
       video: 'KziabHgfecs',
       tags: ['Unity', 'Android', 'Windows', 'SQLServer', 'ASP.NET'],
-    visit: 'https://eduqbrinq.com.br/',
+    visit: 'https://calilokzgames.vercel.app/#Zeca',
     id: 0,
   },
   {
@@ -20,7 +20,7 @@ export const projects = [
     description:"This is a pet management game for Android devices made for a thesis.",
     video: 'vXWogqGy_c0',
     tags: ['Unity', 'Android', 'Management'],
-    visit: 'https://github.com/CaliloKZ/PetworkPublic',
+    visit: 'https://calilokzgames.vercel.app/#Petwork',
     id: 1,
   },
   {
@@ -28,7 +28,7 @@ export const projects = [
     description:"Manu is a HTML5 game developed for the 2022 GlobalGameJam, this year's theme was 'Duality', due to that, this game shows this theme introducing to the player the prejudice against trans people, whose suffer frequently because they don't fit on binary genders ideals",
     video: 'fb02DA0TvbA',
       tags: ['Unity', 'HTML5', 'Puzzle', '2D'],
-    visit: 'https://calilokizan.itch.io/manu',
+    visit: 'https://calilokzgames.vercel.app/#Manu',
     id: 2,
   },
 ];

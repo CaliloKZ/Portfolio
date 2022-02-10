@@ -6,8 +6,8 @@ import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalCompon
 import { projects } from '../../constants/constants';
 
 const opts = {
-  height: '400',
-  width: '400',
+  height: '360px',
+  width: '380px',
   playerVars: {
     // https://developers.google.com/youtube/player_parameters
     autoplay: 0,
