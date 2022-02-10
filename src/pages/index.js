@@ -16,8 +16,8 @@ const Home = () => {
     <Layout>
       <Projects />
       <Zeca />
-      <Educational />
       <Manu />
+      <Educational />
       <Petwork/>
     </Layout>
   );
