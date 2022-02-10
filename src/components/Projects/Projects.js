@@ -1,5 +1,5 @@
 import React from 'react';
-import YouTube from 'react-youtube';
+import ReactPlayer from 'react-player'
 
 import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img } from './ProjectsStyles';
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
@@ -9,7 +9,7 @@ const opts = {
   height: '360px',
   width: '380px',
   playerVars: {
-    // https://developers.google.com/youtube/player_parameters
+    
     autoplay: 0,
   },
 };
@@ -22,7 +22,16 @@ const Projects = () => (
       {projects.map((p, i) => {
         return (
           <BlogCard key={i}>
-          <YouTube videoId={p.video} opts={opts}/>
+            <div className='wrapper'>
+               <ReactPlayer
+               className='player'
+               playing={false}
+               url={p.video}
+               width='100%'
+               height='360px'
+               controls
+               />
+            </div>
             <TitleContent>
               <HeaderThree title>{p.title}</HeaderThree>
               <Hr />
