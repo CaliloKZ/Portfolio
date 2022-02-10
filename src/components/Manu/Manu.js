@@ -16,7 +16,7 @@ const opts = {
 
 
 const Manu = () => (
-  <Section nopadding id="Zeca">
+  <Section nopadding id="Manu">
     <SectionDivider />
     <GridContainer>
       {manu.map((p, i) => {
@@ -35,6 +35,11 @@ const Manu = () => (
               <br />
               <br />
               {p.description2}
+              <br />
+              <br />
+              Manu is avaiable to play 
+              <a href="https://calilokizan.itch.io/manu"> here </a>
+              (Brazilian Portuguese only).
               </CardInfo>
             <ImagesGrid>  
               <Img src={p.image_0}/>

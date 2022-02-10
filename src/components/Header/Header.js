@@ -21,6 +21,11 @@ const Header = () =>  (
         </Link>
       </li>
       <li>
+        <Link href="#Petwork">
+          <NavLink>Petwork</NavLink>
+        </Link>
+      </li>
+      <li>
         <Link href="#Manu">
           <NavLink>Manu</NavLink>
         </Link>
@@ -28,11 +33,6 @@ const Header = () =>  (
       <li>
         <Link href="#Educational">
           <NavLink>Educational</NavLink>
-        </Link>
-      </li>
-      <li>
-        <Link href="#Petwork">
-          <NavLink>Petwork</NavLink>
         </Link>
       </li>
     </Div2>

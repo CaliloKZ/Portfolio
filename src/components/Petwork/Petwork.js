@@ -16,7 +16,7 @@ const opts = {
 
 
 const Petwork = () => (
-  <Section nopadding id="Zeca">
+  <Section nopadding id="Petwork">
     <SectionDivider />
     <GridContainer>
       {petwork.map((p, i) => {

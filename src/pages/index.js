@@ -16,9 +16,9 @@ const Home = () => {
     <Layout>
       <Projects />
       <Zeca />
+      <Petwork/>
       <Manu />
       <Educational />
-      <Petwork/>
     </Layout>
   );
 };
