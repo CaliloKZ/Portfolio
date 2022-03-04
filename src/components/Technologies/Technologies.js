@@ -8,7 +8,7 @@ const Technologies = () =>  (
     <SectionDivider divider />
     <SectionTitle>Technologies</SectionTitle>
     <SectionText>
-      I've worked with a range a technologies and tools in the Unity Engine.
+      I've worked with a range of technologies and tools in the Unity Engine.
     </SectionText>
     <List>
       <ListItem>
