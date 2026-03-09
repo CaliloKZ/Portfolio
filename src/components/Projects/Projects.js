@@ -1,9 +1,24 @@
 import React from 'react';
 import ReactPlayer from 'react-player'
 
-import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img } from './ProjectsStyles';
+import {
+    BlogCard,
+    CardInfo,
+    ExternalLinks,
+    GridContainer,
+    HeaderThree,
+    Hr,
+    Tag,
+    TagList,
+    TitleContent,
+    UtilityList,
+    VideoWrapper,
+    Player
+} from './ProjectsStyles';
+
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
 import { projects } from '../../constants/constants';
+import { RoleBadge } from './ProjectsStyles';
 
 const opts = {
   height: '360px',
@@ -23,18 +38,21 @@ const Projects = () => (
         return (
           <BlogCard key={i}>
             <div className='wrapper'>
-               <ReactPlayer
-               className='player'
-               playing={false}
-               url={p.video}
-               width='100%'
-               height='360px'
-               controls
-               />
+                <VideoWrapper>
+                    <Player>
+                        <ReactPlayer
+                            url={p.video}
+                            width='100%'
+                            height='100%'
+                            controls
+                        />
+                    </Player>
+                </VideoWrapper>
             </div>
             <TitleContent>
-              <HeaderThree title>{p.title}</HeaderThree>
-              <Hr />
+                <HeaderThree title>{p.title}</HeaderThree>
+                {p.role && <RoleBadge>{p.role}</RoleBadge>}
+                <Hr />
             </TitleContent>
             <CardInfo className="card-info">{p.description}</CardInfo>
             <div>

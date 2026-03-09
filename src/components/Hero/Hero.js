@@ -13,7 +13,7 @@ const Hero = (props) => (
           I'm Calilo Kizan
         </SectionTitle>
         <SectionText>
-        I'm a passionate Unity developer from Brazil looking foward to make awesome games. I take a lot of joy in learning new tools and new technologies. My main skills are Unity, C# and a variety of Unity tools
+          I'm a Senior Unity Developer with shipped titles across Desktop, WebGL, Google Play, and the Apple App Store.
         </SectionText>
       </LeftSection>
     </Section>

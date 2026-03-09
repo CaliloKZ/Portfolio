@@ -46,7 +46,7 @@ const Timeline = () => {
     <Section id="about">
       <SectionTitle>About Me</SectionTitle>
       <SectionText>
-      I'm a Professional Unity developer with 3 years of experience. With intermediary fluency in the English language and currently act as the lead developer of projects focused on the educational field. But open to work on other fields.
+          I have 6+ years of Unity experience focused on gameplay systems, multiplayer, and custom Unity Editor tooling to empower designers and accelerate production workflows.
       </SectionText>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
