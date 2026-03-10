@@ -20,6 +20,7 @@ import {
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
 import { projects } from '../../constants/constants';
 import { RoleBadge } from './ProjectsStyles';
+import Link from "next/link";
 
 const featuredProjects = projects.filter(p => p.featured);
 const otherProjects = projects.filter(p => !p.featured);
@@ -68,7 +69,9 @@ const Projects = () => (
               </TagList>
             </div>
             <UtilityList>
-              <ExternalLinks href={p.visit}>Know More</ExternalLinks>
+              <Link href={`/projects/${p.slug}`}>
+              <ExternalLinks>Know More</ExternalLinks>
+              </Link>
             </UtilityList>
           </BlogCard>
     ))}
@@ -105,7 +108,9 @@ const Projects = () => (
             </TagList>
             </div>
             <UtilityList>
-              <ExternalLinks href={p.visit}>Know More</ExternalLinks>
+              <Link href={`/projects/${p.slug}`}>
+              <ExternalLinks>Know More</ExternalLinks>
+              </Link>
             </UtilityList>
           </BlogCard>
     ))}
