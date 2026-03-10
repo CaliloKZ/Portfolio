@@ -135,23 +135,6 @@ App Store
 </>
 )}
 
-{project.screenshots && (
-
-<>
-<Divider />
-<SectionTitle>Screenshots</SectionTitle>
-
-<ScreenshotGrid>
-
-{project.screenshots.map((img,i)=>(
-<Screenshot key={i} src={img} />
-))}
-
-</ScreenshotGrid>
-
-</>
-)}
-
 </PageContainer>
 
 );
