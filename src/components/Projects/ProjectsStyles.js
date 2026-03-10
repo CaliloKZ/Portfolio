@@ -136,3 +136,13 @@ export const RoleBadge = styled.div`
   display: inline-block;
   margin-bottom: 10px;
 `
+
+export const TechBadge = styled.span`
+background: #1f2a44;
+color: #fff;
+padding: 6px 12px;
+border-radius: 14px;
+font-size: 1.2rem;
+margin: 4px;
+display: inline-block;
+`

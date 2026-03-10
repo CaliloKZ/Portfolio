@@ -13,12 +13,16 @@ import {
     TitleContent,
     UtilityList,
     VideoWrapper,
-    Player
+    Player,
+    TechBadge
 } from './ProjectsStyles';
 
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
 import { projects } from '../../constants/constants';
 import { RoleBadge } from './ProjectsStyles';
+
+const featuredProjects = projects.filter(p => p.featured);
+const otherProjects = projects.filter(p => !p.featured);
 
 const opts = {
   height: '360px',
@@ -32,11 +36,12 @@ const opts = {
 const Projects = () => (
   <Section nopadding id="projects">
     <SectionDivider />
-    <SectionTitle main>Projects</SectionTitle>
+
+    <SectionTitle main>Featured Projects</SectionTitle>
+
     <GridContainer>
-      {projects.map((p, i) => {
-        return (
-          <BlogCard key={i}>
+    {featuredProjects.map((p,i)=>(
+    <BlogCard key={i}>
             <div className='wrapper'>
                 <VideoWrapper>
                     <Player>
@@ -58,7 +63,7 @@ const Projects = () => (
             <div>
               <TagList>
                 {p.tags.map((t, i) => {
-                  return <Tag key={i}>{t}</Tag>;
+                  return <TechBadge key={i}>{t}</TechBadge>;
                 })}
               </TagList>
             </div>
@@ -66,8 +71,44 @@ const Projects = () => (
               <ExternalLinks href={p.visit}>Know More</ExternalLinks>
             </UtilityList>
           </BlogCard>
-        );
-      })}
+    ))}
+    </GridContainer>
+
+    <SectionTitle>Other Projects</SectionTitle>
+
+    <GridContainer>
+    {otherProjects.map((p,i)=>(
+    <BlogCard key={i}>
+            <div className='wrapper'>
+                <VideoWrapper>
+                    <Player>
+                        <ReactPlayer
+                            url={p.video}
+                            width='100%'
+                            height='100%'
+                            controls
+                        />
+                    </Player>
+                </VideoWrapper>
+            </div>
+            <TitleContent>
+                <HeaderThree title>{p.title}</HeaderThree>
+                {p.role && <RoleBadge>{p.role}</RoleBadge>}
+                <Hr />
+            </TitleContent>
+            <CardInfo className="card-info">{p.description}</CardInfo>
+            <div>
+              <TagList>
+              {p.tags.map((t, i) => {
+                return <TechBadge key={i}>{t}</TechBadge>;
+              })}
+            </TagList>
+            </div>
+            <UtilityList>
+              <ExternalLinks href={p.visit}>Know More</ExternalLinks>
+            </UtilityList>
+          </BlogCard>
+    ))}
     </GridContainer>
   </Section>
 );
