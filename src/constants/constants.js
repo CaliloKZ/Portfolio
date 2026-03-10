@@ -69,4 +69,14 @@ Gameplay programmer implementing combat systems and core gameplay features.`,
   },
 ];
 
-export const TimeLineData = [ { year: 2019, text: 'Worked as a freelance developer', }, { year: 2019, text: 'Started working in a educational project', }, { year: 2021, text: 'Changed my degree to Digital Games', }, { year: 2022, text: 'Participated in my first Game Jam', }, ];
+export const TimeLineData = [ 
+  { year: 2019, text: 'Worked as a freelance developer', }, 
+  { year: 2019, text: 'Started working in a educational project', }, 
+  { year: 2021, text: 'Changed my degree to Digital Games', }, 
+  { year: 2022, text: 'Participated in my first Game Jam', }, 
+  { year: 2023, text: 'Participated in my first Game Jam', }, 
+  { year: 2022, text: 'Participated in my first Game Jam', }, 
+  { year: 2022, text: 'Participated in my first Game Jam', }, 
+  { year: 2022, text: 'Participated in my first Game Jam', }, 
+
+];
