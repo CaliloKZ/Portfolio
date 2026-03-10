@@ -78,7 +78,6 @@ const Projects = () => (
     </GridContainer>
 
     <SectionTitle>Other Projects</SectionTitle>
-
     <GridContainer>
     {otherProjects.map((p,i)=>(
     <BlogCard key={i}>
@@ -107,11 +106,6 @@ const Projects = () => (
               })}
             </TagList>
             </div>
-            <UtilityList>
-              <Link href={`/projects/${p.slug}`}>
-              <ExternalLinks>Know More</ExternalLinks>
-              </Link>
-            </UtilityList>
           </BlogCard>
     ))}
     </GridContainer>
