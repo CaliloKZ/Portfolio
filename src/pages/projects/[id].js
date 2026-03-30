@@ -6,23 +6,24 @@ import { BackButton } from "../../components/ProjectPage/ProjectPageStyles";
 import { FaSteam, FaGooglePlay, FaApple } from "react-icons/fa";
 import { SiEpicgames } from "react-icons/si";
 
-import {
-PageContainer,
-Title,
-Role,
-VideoContainer,
-SectionTitle,
-Text,
-List,
-ListItem,
-TechContainer,
-TechBadge,
-ScreenshotGrid,
-Screenshot,
-Divider,
-Highlight,
-StoreLinks,
-StoreButton
+import 
+{
+  PageContainer,
+  Title,
+  Role,
+  VideoContainer,
+  SectionTitle,
+  Text,
+  List,
+  ListItem,
+  TechContainer,
+  TechBadge,
+  ScreenshotGrid,
+  Screenshot,
+  Divider,
+  Highlight,
+  StoreLinks,
+  StoreButton
 } from "../../components/ProjectPage/ProjectPageStyles";
 
 export default function ProjectPage() {
@@ -51,10 +52,10 @@ return (
 <VideoContainer>
 
 <ReactPlayer
-url={project.video}
-width="100%"
-height="500px"
-controls
+  url={project.video}
+  width="100%"
+  height="500px"
+  controls
 />
 
 </VideoContainer>
@@ -65,51 +66,6 @@ controls
 <Divider />
 {project.links && (
 <>
-<SectionTitle>Play the Game</SectionTitle>
-
-<StoreLinks>
-
-{project.links.steam && (
-<StoreButton href={project.links.steam} target="_blank">
-<FaSteam />
-Steam
-</StoreButton>
-)}
-
-{project.links.epic && (
-<StoreButton href={project.links.epic} target="_blank">
-<SiEpicgames />
-Epic Games
-</StoreButton>
-)}
-
-{project.links.playstore && (
-<StoreButton href={project.links.playstore} target="_blank">
-<FaGooglePlay />
-Google Play
-</StoreButton>
-)}
-
-{project.links.appstore && (
-<StoreButton href={project.links.appstore} target="_blank">
-<FaApple />
-App Store
-</StoreButton>
-)}
-
-</StoreLinks>
-</>
-)}
-<SectionTitle>Technologies</SectionTitle>
-
-<TechContainer>
-
-{project.tech.map((t,i)=>(
-<TechBadge key={i}>{t}</TechBadge>
-))}
-
-</TechContainer>
-<Divider />
 <SectionTitle>Key Contributions</SectionTitle>
 
 <List>
@@ -120,21 +76,54 @@ App Store
 
 </List>
 
-{project.challenges && (
-<>
-<Divider />
-<SectionTitle>Technical Challenges</SectionTitle>
+{project.canPlay && (
+  <>
+    <Divider />
+    <SectionTitle>Play the Game</SectionTitle>
 
-<List>
+    <StoreLinks>
+      {project.links.steam && (
+        <StoreButton href={project.links.steam} target="_blank">
+          <FaSteam />
+          Steam
+        </StoreButton>
+      )}
 
-{project.challenges.map((c,i)=>(
-<ListItem key={i}>{c}</ListItem>
-))}
+      {project.links.epic && (
+        <StoreButton href={project.links.epic} target="_blank">
+          <SiEpicgames />
+          Epic Games
+        </StoreButton>
+      )}
 
-</List>
+      {project.links.playstore && (
+        <StoreButton href={project.links.playstore} target="_blank">
+          <FaGooglePlay />
+          Google Play
+        </StoreButton>
+      )}
+
+      {project.links.appstore && (
+        <StoreButton href={project.links.appstore} target="_blank">
+          <FaApple />
+          App Store
+        </StoreButton>
+      )}
+    </StoreLinks>
+  </>
+)}
 </>
 )}
+<Divider />
+<SectionTitle>Technologies</SectionTitle>
 
+<TechContainer>
+
+{project.tech.map((t,i)=>(
+<TechBadge key={i}>{t}</TechBadge>
+))}
+
+</TechContainer>
 </PageContainer>
 
 );
