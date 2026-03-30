@@ -16,12 +16,16 @@ export const projects = [
     I worked primarily on <strong>gameplay systems and multiplayer interactions</strong>
     using <strong>Unity and C#</strong>.
 
+    <p>
     My responsibilities included developing the <strong>core weapon system</strong>,
     implementing <strong>deterministic multiplayer gameplay using Photon Quantum</strong>,
     and creating <strong>custom Unity Editor tools</strong> to accelerate designer workflows.
+    </p>
 
+    <p>
     The project also required <strong>performance optimization for mobile devices</strong>
     to ensure smooth gameplay across a wide range of hardware.
+    </p>
     `,
 
   tags: ["Unity", "C#", "Android", "iOS", "Multiplayer"],
