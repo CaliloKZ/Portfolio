@@ -52,9 +52,10 @@ gap: 10px;
 `;
 
 export const ListItem = styled.li`
-font-size: 2rem;
-line-height: 1.6;
-color: #e4ecf3;
+  font-size: 2.2rem;
+  line-height: 1.7;
+  color: #e4ecf3;
+  margin-bottom: 1.2rem;
 `;
 
 export const TechContainer = styled.div`

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Section, SectionTitle } from '../styles/GlobalComponents';
+import { Section, SectionSubTitle, SectionTitle } from '../styles/GlobalComponents';
 import styled from 'styled-components';
 
 const StackContainer = styled.div`
@@ -18,28 +18,69 @@ border-radius: 20px;
 font-size: 1.4rem;
 `
 
-const tech = [
-'Unity',
-'C#',
-'Gameplay Systems',
-'Multiplayer',
-'Photon',
-'Unity Editor Tools',
-'Mobile Development',
-'Performance Optimization'
-]
+const mainSkills = [
+  'Unity',
+  'C#',
+  'Gameplay Systems',
+  'Multiplayer',
+  'Photon Quantum',
+  'Photon Fusion 2',
+  'Unity Editor Tools',
+  'Performance Optimization'
+];
+
+const otherSkills = [
+  // Architecture / Advanced
+  'Simulation & AI',
+  'Game Architecture',
+  'Deterministic Networking',
+  'Memory Management',
+  'Profiling (CPU/RAM)',
+
+  // Tools / Pipeline
+  'CI/CD Pipelines',
+  'Build Automation',
+  'Jenkins',
+  'Fastlane',
+
+  // Backend / Integration
+  'REST APIs',
+  'Backend Integration',
+  'SQL',
+
+  // Platforms
+  'Android',
+  'iOS',
+  'Windows',
+  'WebGL',
+
+  // Infra
+  'Google Cloud',
+  'Linux (Ubuntu)',
+
+  // UI
+  'Unity UI (Canvas)',
+  'UI Systems'
+];
 
 const TechStack = () => (
-<Section id="tech">
-<SectionTitle>Technical Skills</SectionTitle>
+  <Section id="tech">
+    <SectionTitle>Technical Skills</SectionTitle>
 
-<StackContainer>
-{tech.map((t,i)=>(
-<Badge key={i}>{t}</Badge>
-))}
-</StackContainer>
+    <SectionSubTitle>Main Skills</SectionSubTitle>
+    <StackContainer>
+      {mainSkills.map((t, i) => (
+        <Badge key={`main-${i}`}>{t}</Badge>
+      ))}
+    </StackContainer>
 
-</Section>
-)
+    <SectionSubTitle>Other Skills</SectionSubTitle>
+    <StackContainer>
+      {otherSkills.map((t, i) => (
+        <Badge key={`other-${i}`}>{t}</Badge>
+      ))}
+    </StackContainer>
+  </Section>
+);
 
 export default TechStack
