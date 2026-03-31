@@ -26,7 +26,8 @@ const mainSkills = [
   'Photon Quantum',
   'Photon Fusion 2',
   'Unity Editor Tools',
-  'Performance Optimization'
+  'Performance Optimization',
+  'Git'
 ];
 
 const otherSkills = [
@@ -39,7 +40,6 @@ const otherSkills = [
 
   // Tools / Pipeline
   'CI/CD Pipelines',
-  'Build Automation',
   'Jenkins',
   'Fastlane',
 
@@ -52,15 +52,7 @@ const otherSkills = [
   'Android',
   'iOS',
   'Windows',
-  'WebGL',
-
-  // Infra
-  'Google Cloud',
-  'Linux (Ubuntu)',
-
-  // UI
-  'Unity UI (Canvas)',
-  'UI Systems'
+  'WebGL'
 ];
 
 const TechStack = () => (
